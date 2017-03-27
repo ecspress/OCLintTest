@@ -323,7 +323,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -project ${PROJECT_NAME}.xcodeproj -target ${PROJECT_NAME} -target OCLintTestLite -configuration Debug clean build | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -- -report-type xcode";
+			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -configuration Debug clean build | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -e Pods -- -report-type xcode";
 		};
 		DD4D865945DCDA4FB00FD8B5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 def shared_pods
-	pod 'TPKeyboardAvoiding', '~> 1.2.11'
+	pod 'TPKeyboardAvoiding'
 end
 
 

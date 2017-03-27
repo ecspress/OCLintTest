@@ -27,6 +27,12 @@
 		9F98EF3D1E891146003AAEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F98EF3B1E891146003AAEAD /* Main.storyboard */; };
 		9F98EF3F1E891146003AAEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F98EF3E1E891146003AAEAD /* Assets.xcassets */; };
 		9F98EF421E891146003AAEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F98EF401E891146003AAEAD /* LaunchScreen.storyboard */; };
+		9F9C6BD81E891F7E00116FB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98EF391E891146003AAEAD /* ViewController.m */; };
+		9F9C6BD91E891F7E00116FB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98EF361E891146003AAEAD /* AppDelegate.m */; };
+		9F9C6BDA1E891F7E00116FB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98EF331E891146003AAEAD /* main.m */; };
+		9F9C6BDD1E891F7E00116FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F98EF401E891146003AAEAD /* LaunchScreen.storyboard */; };
+		9F9C6BDE1E891F7E00116FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F98EF3E1E891146003AAEAD /* Assets.xcassets */; };
+		9F9C6BDF1E891F7E00116FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F98EF3B1E891146003AAEAD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +46,19 @@
 		9F98EF3E1E891146003AAEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F98EF411E891146003AAEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F98EF431E891146003AAEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9C6BE31E891F7E00116FB1 /* OCLintTestLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCLintTestLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9C6BE41E891F7E00116FB1 /* OCLintTestLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OCLintTestLite-Info.plist"; path = "/Users/faisal.saleh/Desktop/OCLintTest/OCLintTest/OCLintTestLite-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9F98EF2C1E891146003AAEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9C6BDB1E891F7E00116FB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				9F98EF2F1E891146003AAEAD /* OCLintTest.app */,
+				9F9C6BE31E891F7E00116FB1 /* OCLintTestLite.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +95,7 @@
 				9F98EF3B1E891146003AAEAD /* Main.storyboard */,
 				9F98EF3E1E891146003AAEAD /* Assets.xcassets */,
 				9F98EF401E891146003AAEAD /* LaunchScreen.storyboard */,
+				9F9C6BE41E891F7E00116FB1 /* OCLintTestLite-Info.plist */,
 				9F98EF431E891146003AAEAD /* Info.plist */,
 				9F98EF321E891146003AAEAD /* Supporting Files */,
 			);
@@ -113,6 +130,23 @@
 			productReference = 9F98EF2F1E891146003AAEAD /* OCLintTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9F9C6BD61E891F7E00116FB1 /* OCLintTestLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9C6BE01E891F7E00116FB1 /* Build configuration list for PBXNativeTarget "OCLintTestLite" */;
+			buildPhases = (
+				9F9C6BD71E891F7E00116FB1 /* Sources */,
+				9F9C6BDB1E891F7E00116FB1 /* Frameworks */,
+				9F9C6BDC1E891F7E00116FB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCLintTestLite;
+			productName = OCLintTest;
+			productReference = 9F9C6BE31E891F7E00116FB1 /* OCLintTestLite.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +165,9 @@
 						DevelopmentTeam = CLXH3E5RD8;
 						ProvisioningStyle = Manual;
 					};
+					9F9C6BD61E891F7E00116FB1 = {
+						DevelopmentTeam = CLXH3E5RD8;
+					};
 				};
 			};
 			buildConfigurationList = 9F98EF2A1E891146003AAEAD /* Build configuration list for PBXProject "OCLintTest" */;
@@ -148,6 +185,7 @@
 			targets = (
 				9F98EF2E1E891146003AAEAD /* OCLintTest */,
 				9F3D235A1E891A5C001C5316 /* OCLint */,
+				9F9C6BD61E891F7E00116FB1 /* OCLintTestLite */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +198,16 @@
 				9F98EF421E891146003AAEAD /* LaunchScreen.storyboard in Resources */,
 				9F98EF3F1E891146003AAEAD /* Assets.xcassets in Resources */,
 				9F98EF3D1E891146003AAEAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9C6BDC1E891F7E00116FB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9C6BDD1E891F7E00116FB1 /* LaunchScreen.storyboard in Resources */,
+				9F9C6BDE1E891F7E00116FB1 /* Assets.xcassets in Resources */,
+				9F9C6BDF1E891F7E00116FB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -project ${PROJECT_NAME}.xcodeproj -target ${PROJECT_NAME} -configuration Debug clean build | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -- -report-type xcode";
+			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -project ${PROJECT_NAME}.xcodeproj -target ${PROJECT_NAME} -target OCLintTestLite -configuration Debug clean build | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -- -report-type xcode";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -189,6 +237,16 @@
 				9F98EF3A1E891146003AAEAD /* ViewController.m in Sources */,
 				9F98EF371E891146003AAEAD /* AppDelegate.m in Sources */,
 				9F98EF341E891146003AAEAD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9C6BD71E891F7E00116FB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9C6BD81E891F7E00116FB1 /* ViewController.m in Sources */,
+				9F9C6BD91E891F7E00116FB1 /* AppDelegate.m in Sources */,
+				9F9C6BDA1E891F7E00116FB1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +404,34 @@
 			};
 			name = Release;
 		};
+		9F9C6BE11E891F7E00116FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CLXH3E5RD8;
+				INFOPLIST_FILE = "$(SRCROOT)/OCLintTest/OCLintTestLite-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.OCLintTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2608ce8e-171d-4e89-b28d-4a22e749ff89";
+				PROVISIONING_PROFILE_SPECIFIER = 10PGenericDevelopmentProfile;
+			};
+			name = Debug;
+		};
+		9F9C6BE21E891F7E00116FB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CLXH3E5RD8;
+				INFOPLIST_FILE = "$(SRCROOT)/OCLintTest/OCLintTestLite-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tenpearls.OCLintTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2608ce8e-171d-4e89-b28d-4a22e749ff89";
+				PROVISIONING_PROFILE_SPECIFIER = 10PGenericDevelopmentProfile;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +442,7 @@
 				9F3D235C1E891A5C001C5316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F98EF2A1E891146003AAEAD /* Build configuration list for PBXProject "OCLintTest" */ = {
 			isa = XCConfigurationList;
@@ -371,6 +458,15 @@
 			buildConfigurations = (
 				9F98EF471E891146003AAEAD /* Debug */,
 				9F98EF481E891146003AAEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9C6BE01E891F7E00116FB1 /* Build configuration list for PBXNativeTarget "OCLintTestLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9C6BE11E891F7E00116FB1 /* Debug */,
+				9F9C6BE21E891F7E00116FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

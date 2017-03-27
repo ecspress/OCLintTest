@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9F3D235A1E891A5C001C5316 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9F3D235D1E891A5C001C5316 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				9F3D235E1E891A5F001C5316 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9F98EF341E891146003AAEAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98EF331E891146003AAEAD /* main.m */; };
 		9F98EF371E891146003AAEAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98EF361E891146003AAEAD /* AppDelegate.m */; };
@@ -108,6 +122,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = TenPearls;
 				TargetAttributes = {
+					9F3D235A1E891A5C001C5316 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					9F98EF2E1E891146003AAEAD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = CLXH3E5RD8;
@@ -129,6 +147,7 @@
 			projectRoot = "";
 			targets = (
 				9F98EF2E1E891146003AAEAD /* OCLintTest */,
+				9F3D235A1E891A5C001C5316 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +164,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F3D235E1E891A5F001C5316 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -project ${PROJECT_NAME}.xcodeproj -target ${PROJECT_NAME} -configuration Debug clean build | xcodebuild | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -- -report-type xcode";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F98EF2B1E891146003AAEAD /* Sources */ = {
@@ -179,6 +214,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9F3D235B1E891A5C001C5316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F3D235C1E891A5C001C5316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9F98EF441E891146003AAEAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -300,6 +349,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F3D235D1E891A5C001C5316 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F3D235B1E891A5C001C5316 /* Debug */,
+				9F3D235C1E891A5C001C5316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9F98EF2A1E891146003AAEAD /* Build configuration list for PBXProject "OCLintTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -316,6 +373,7 @@
 				9F98EF481E891146003AAEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

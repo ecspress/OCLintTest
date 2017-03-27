@@ -2,3 +2,5 @@ build/
 DerivedData/
 .DS_Store
 xcuserdata/
+compile_commands.json
+

@@ -177,7 +177,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -project ${PROJECT_NAME}.xcodeproj -target ${PROJECT_NAME} -configuration Debug clean build | xcodebuild | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -- -report-type xcode";
+			shellScript = "cd ${SRCROOT}\nxcodebuild ONLY_ACTIVE_ARCH=NO -project ${PROJECT_NAME}.xcodeproj -target ${PROJECT_NAME} -configuration Debug clean build | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -- -report-type xcode";
 		};
 /* End PBXShellScriptBuildPhase section */
 
